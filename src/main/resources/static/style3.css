@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+    user-select:none;
+
+    background:#ffffff;
+}
+
+/* Khung game */
+
+.game{
+    position:relative;
+
+    display:inline-block;
+}
+
+/* Ảnh nền */
+
+.background{
+    display:block;
+
+    max-width:100vw;
+    max-height:100vh;
+
+    width:auto;
+    height:auto;
+}
+
+/* Lá */
+
+.leaf{
+    position:absolute;
+
+    z-index:2;
+
+    cursor:grab;
+    user-select:none;
+}
+
+/* Lá số 7 */
+
+.leaf8{
+    width:165px;
+
+    top:100px;
+    left:800px;
+
+
+}
+.leaf9{
+    width:140px;
+
+    top:100px;
+    left:900px;
+
+
+}
+.leaf10{
+    width:165px;
+
+    top:100px;
+    left:1000px;
+
+
+}
+.leaf11{
+    width:165px;
+
+    top:100px;
+    left:1100px;
+
+
+}
+/* Hiệu ứng đung đưa nhẹ */
+
+@keyframes sway{
+
+    0%{
+        transform:rotate(-1deg);
+    }
+
+    50%{
+        transform:rotate(1deg);
+    }
+
+    100%{
+        transform:rotate(-1deg);
+    }
+}
+
+/* Ô nhập đáp án */
+
+.answer-container{
+    position:absolute;
+
+    bottom:20px;
+    left:20px;
+
+    z-index:1000;
+
+    display:flex;
+    gap:10px;
+}
+
+.answer-container input{
+    width:250px;
+
+    padding:10px;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:18px;
+}
+
+.answer-container button{
+    padding:10px 20px;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+#message{
+    color:red;
+    font-size:18px;
+    font-weight:bold;
+    margin-left:10px;
+}
