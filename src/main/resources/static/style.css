@@ -66,18 +66,21 @@ body{
 /* Hàng trên */
 
 .leaf1{
+    width:360px;
     top:280px;
     left:700px;
     animation:sway 3s infinite ease-in-out;
 }
 
 .leaf2{
+    width:170px;
     top:270px;
     left:900px;
     animation:sway 4s infinite ease-in-out;
 }
 
 .leaf3{
+    width:170px;
     top:260px;
     left:1100px;
     animation:sway 2.5s infinite ease-in-out;
@@ -92,27 +95,33 @@ body{
 }
 
 .leaf5{
-    width:170px;
+    width:270px;
     top:520px;
     left:1030px;
     animation:sway 2.8s infinite ease-in-out;
 }
 
 .leaf6{
-    width:170px;
+    width:270px;
     top:480px;
     left:1250px;
     animation:sway 4.5s infinite ease-in-out;
 }
 .answer-container{
-    position:absolute;
-    bottom:20px;
-    left:20px;
+    position: absolute;
 
-    z-index:1000;
+    bottom: 20px;
+    right: 20px;
 
-    display:flex;
-    gap:10px;
+    z-index: 1000;
+
+    display: flex;
+    gap: 10px;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+
 }
 
 .answer-container input{
